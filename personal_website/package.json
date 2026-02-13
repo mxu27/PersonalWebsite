@@ -2,7 +2,7 @@
   "name": "personal_website",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://michael-xu.github.io/personal_website",
+  "homepage": "https://mxu27.github.io/PersonalWebsite",
   "type": "module",
   "scripts": {
     "dev": "vite",
