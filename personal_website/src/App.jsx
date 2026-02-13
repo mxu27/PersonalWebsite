@@ -26,7 +26,6 @@ function App() {
             <NavLink to="/links" className={NavLinkClasses}>
               Links
             </NavLink>
-            <div></div>
           </nav>
         </div>
       </aside>
