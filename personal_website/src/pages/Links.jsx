@@ -1,6 +1,6 @@
 function Links() {
   return (
-    <div className="mx-auto max-w-3xl">
+    <div className="w-full">
       <header className="mb-12">
         <h1 className="text-4xl font-bold tracking-tight text-white">Links</h1>
         <p className="mt-2 text-lg text-slate-400">Find me elsewhere.</p>

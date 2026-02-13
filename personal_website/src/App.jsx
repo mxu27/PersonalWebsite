@@ -1,9 +1,9 @@
 import { Routes, Route, NavLink } from 'react-router-dom'
 import StarfieldBackground from './components/StarfieldBackground.jsx'
-import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Links from './pages/Links.jsx'
 import Projects from './pages/Projects.jsx'
+import Hobbies from './pages/Hobbies.jsx'
 
 function NavLinkClasses({ isActive }) {
   return `text-left rounded-lg px-3 py-2 text-sm transition-colors hover:text-white ${
@@ -21,14 +21,14 @@ function App() {
         <aside className="shrink-0 px-4 py-4 md:sticky md:top-0 md:h-full md:w-56 md:border-b-0 md:px-5 md:py-8">
         <div className="flex flex-col md:h-full md:flex-col justify-center items-center">
           <nav className="flex flex-row gap-1 md:flex-col">
-            <NavLink to="/" end className={NavLinkClasses}>
-              Home
-            </NavLink>
-            <NavLink to="/about" className={NavLinkClasses}>
+            <NavLink to="/" className={NavLinkClasses}>
               About
             </NavLink>
             <NavLink to="/projects" className={NavLinkClasses}> 
               Projects
+            </NavLink>
+            <NavLink to="/hobbies" className={NavLinkClasses}>
+              Hobbies
             </NavLink>
             <NavLink to="/links" className={NavLinkClasses}>
               Links
@@ -40,9 +40,9 @@ function App() {
       {/* Main content, this is where i put the route pages */}
       <main className="min-w-0 flex-1 px-6 py-16">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/" element={<About />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/hobbies" element={<Hobbies />} />
           <Route path="/links" element={<Links />} />
         </Routes>
       </main>

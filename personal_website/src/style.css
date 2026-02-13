@@ -4,3 +4,9 @@ html,
 body {
   min-height: 100%;
 }
+
+@layer components {
+  .project_card {
+    @apply bg-slate-800 p-4 rounded-lg hover:bg-slate-700 transition-colors duration-300 text-white;
+  }
+}
