@@ -1,5 +1,5 @@
 import { Routes, Route, NavLink } from 'react-router-dom'
-import ParticleBackground from './components/ParticleBackground.jsx'
+import StarfieldBackground from './components/StarfieldBackground.jsx'
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Links from './pages/Links.jsx'
@@ -13,7 +13,7 @@ function NavLinkClasses({ isActive }) {
 function App() {
   return (
     <>
-      <ParticleBackground />
+      <StarfieldBackground />
       <div className="relative z-10 grid min-h-screen grid-rows-[1fr_auto]">
       <div className="flex min-h-0 min-w-0 flex-col md:flex-row">
         {/* Sidebar: top bar on mobile, left column on desktop */}
