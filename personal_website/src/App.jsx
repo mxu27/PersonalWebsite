@@ -1,4 +1,5 @@
-import { Routes, Route, Link, NavLink } from 'react-router-dom'
+import { Routes, Route, NavLink } from 'react-router-dom'
+import ParticleBackground from './components/ParticleBackground.jsx'
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Links from './pages/Links.jsx'
@@ -11,10 +12,12 @@ function NavLinkClasses({ isActive }) {
 
 function App() {
   return (
-    <div className="grid min-h-screen grid-rows-[1fr_auto]">
+    <>
+      <ParticleBackground />
+      <div className="relative z-10 grid min-h-screen grid-rows-[1fr_auto]">
       <div className="flex min-h-0 min-w-0 flex-col md:flex-row">
         {/* Sidebar: top bar on mobile, left column on desktop */}
-        <aside className="shrink-0 px-4 py-4 backdrop-blur-sm md:sticky md:top-0 md:h-full md:w-56 md:border-b-0 md:px-5 md:py-8">
+        <aside className="shrink-0 px-4 py-4 md:sticky md:top-0 md:h-full md:w-56 md:border-b-0 md:px-5 md:py-8">
         <div className="flex flex-col md:h-full md:flex-col justify-center">
           <nav className="flex flex-row gap-1 md:flex-col">
             <NavLink to="/" end className={NavLinkClasses}>
@@ -40,9 +43,10 @@ function App() {
       </main>
       </div>
       <footer className="px-6 py-4 text-center text-sm text-slate-500">
-        <p>© 2026 Michael Xu. All rights reserved.</p>
-      </footer>
-    </div>
+        <p>&copy; 2026 Michael Xu. All rights reserved.</p>
+        </footer>
+      </div>
+    </>
   )
 }
 
