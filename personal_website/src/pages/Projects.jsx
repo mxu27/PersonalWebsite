@@ -11,7 +11,7 @@ function Projects() {
             CSS.
           </p>
         </section>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 overflow-y-scroll">
             <div className="project_card">01</div>
             <div className="project_card">02</div>
             <div className="project_card">03</div>

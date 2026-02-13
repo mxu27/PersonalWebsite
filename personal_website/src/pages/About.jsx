@@ -10,8 +10,8 @@ function About() {
       </header>
       <section className="mb-10">
         <p className="text-slate-400 leading-relaxed">
-          Add your bio and what you do here. This page uses React and Tailwind
-          CSS.
+          I'm currently a student at Washington University in St. Louis studying Computer Science. 
+          I'm born and raised in a humble town called Swampscott, Massachusetts and currently live in St. Louis, Missouri.
         </p>
       </section>
     </div>
