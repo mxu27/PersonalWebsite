@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 
-const STAR_COLOR = '#fff'
+const STAR_COLOR = '#404040'
 const STAR_SIZE = 3
 const STAR_MIN_SCALE = 0.2
 const OVERFLOW_THRESHOLD = 50
@@ -22,8 +22,8 @@ export default function StarfieldBackground() {
     let pointerX = null
     let pointerY = null
     let touchInput = false
-    const velocity = { x: 0, y: 0, tx: 0, ty: 0, z: 0.0005 }
-    const starCount = Math.floor((window.innerWidth + window.innerHeight) / 8)
+    const velocity = { x: 0, y: 0, tx: 0, ty: 0, z: 0.00015 }
+    const starCount = Math.floor((window.innerWidth + window.innerHeight) / 2)
 
     function placeStar(star) {
       star.x = Math.random() * width
@@ -147,9 +147,9 @@ export default function StarfieldBackground() {
         const oy = y - pointerY
 
         velocity.tx =
-          velocity.tx + (ox / (8 * scale)) * (touchInput ? 1 : -1)
+          velocity.tx + (ox / (100 * scale)) * (touchInput ? 1 : -1)
         velocity.ty =
-          velocity.ty + (oy / (8 * scale)) * (touchInput ? 1 : -1)
+          velocity.ty + (oy / (100 * scale)) * (touchInput ? 1 : -1)
       }
 
       pointerX = x
@@ -208,8 +208,8 @@ export default function StarfieldBackground() {
       className="pointer-events-none fixed inset-0 z-0 h-screen w-screen bg-black"
       style={{
         backgroundImage: `
-          radial-gradient(circle at top right, rgba(121, 68, 154, 0.13), transparent),
-          radial-gradient(circle at 20% 80%, rgba(41, 196, 255, 0.13), transparent)
+          radial-gradient(circle at top right, rgba(121, 68, 154, 0.15), transparent),
+          radial-gradient(circle at 20% 80%, rgba(41, 196, 255, 0.15), transparent)
         `,
       }}
       aria-hidden="true"

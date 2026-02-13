@@ -3,9 +3,10 @@ import StarfieldBackground from './components/StarfieldBackground.jsx'
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Links from './pages/Links.jsx'
+import Projects from './pages/Projects.jsx'
 
 function NavLinkClasses({ isActive }) {
-  return `text-center rounded-lg px-3 py-2 text-sm transition-colors hover:text-white ${
+  return `text-left rounded-lg px-3 py-2 text-sm transition-colors hover:text-white ${
     isActive ? 'text-white' : 'text-slate-400'
   }`
 }
@@ -18,13 +19,16 @@ function App() {
       <div className="flex min-h-0 min-w-0 flex-col md:flex-row">
         {/* Sidebar: top bar on mobile, left column on desktop */}
         <aside className="shrink-0 px-4 py-4 md:sticky md:top-0 md:h-full md:w-56 md:border-b-0 md:px-5 md:py-8">
-        <div className="flex flex-col md:h-full md:flex-col justify-center">
+        <div className="flex flex-col md:h-full md:flex-col justify-center items-center">
           <nav className="flex flex-row gap-1 md:flex-col">
             <NavLink to="/" end className={NavLinkClasses}>
               Home
             </NavLink>
             <NavLink to="/about" className={NavLinkClasses}>
               About
+            </NavLink>
+            <NavLink to="/projects" className={NavLinkClasses}> 
+              Projects
             </NavLink>
             <NavLink to="/links" className={NavLinkClasses}>
               Links
@@ -38,6 +42,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/links" element={<Links />} />
         </Routes>
       </main>
