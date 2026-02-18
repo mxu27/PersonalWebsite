@@ -37,7 +37,7 @@ function App() {
           </aside>
 
           {/* Main content, this is where i put the route pages */}
-          <main className="min-h-0 min-w-0 flex-1 overflow-y-auto px-6 py-16">
+          <main className="min-h-0 min-w-0 flex-1 overflow-y-auto px-6 py-16 scrollbar-hide">
             <Routes>
               <Route path="/" element={<About />} />
               <Route path="/projects" element={<Projects />} />

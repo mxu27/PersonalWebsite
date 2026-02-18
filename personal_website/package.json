@@ -2,7 +2,7 @@
   "name": "personal_website",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://mxu27.github.io/PersonalWebsite",
+  "homepage": ".",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -17,6 +17,7 @@
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-router-dom": "^7.13.0",
+    "tailwind-scrollbar-hide": "^4.0.0",
     "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
