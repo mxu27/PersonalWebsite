@@ -1,3 +1,5 @@
+import { apiUrl, getHello } from '../api.js'
+
 function Projects() {
     return (
       <div className="w-full">
