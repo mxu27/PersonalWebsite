@@ -8,7 +8,8 @@ function Links() {
       <ul className="space-y-3">
         <li>
           <a
-            href="#"
+            href="https://github.com/MichaelXu27"
+            target="_blank"
             className="text-sky-400 hover:text-sky-300 hover:underline"
           >
             GitHub
@@ -16,12 +17,21 @@ function Links() {
         </li>
         <li>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/michael-xu-98a601272/"
+            target="_blank"
             className="text-sky-400 hover:text-sky-300 hover:underline"
           >
             LinkedIn
           </a>
         </li>
+        {/* <li>
+          <a 
+          href="#" 
+          target="_blank"
+          className="text-sky-400 hover:text-sky-300 hover:underline"
+          >
+            Resume</a>
+        </li> */}
       </ul>
     </div>
   )

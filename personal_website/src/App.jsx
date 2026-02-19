@@ -47,7 +47,7 @@ function App() {
           </main>
         </div>
         <footer className="px-6 py-4 text-center text-sm text-slate-500">
-          <p>&copy; 2026 Michael Xu. All rights reserved.</p>
+          <p>&copy; Made by Michael Xu</p>
         </footer>
       </div>
     </>
