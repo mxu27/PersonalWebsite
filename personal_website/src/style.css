@@ -9,6 +9,9 @@ body {
 
 @layer components {
   .project_card {
-    @apply bg-slate-800 p-4 rounded-lg hover:bg-slate-700 transition-colors duration-300 text-white text-center h-64;
+    @apply bg-slate-800 p-4 rounded-lg hover:bg-slate-700 transition-colors duration-300 text-white text-center h-24;
+    @apply transform transition-transform duration-200 ease-in-out;
+    @apply shadow-sm hover:shadow-lg;
+    @apply hover:scale-102;
   }
 }

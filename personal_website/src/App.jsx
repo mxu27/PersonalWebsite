@@ -4,6 +4,7 @@ import About from './pages/About.jsx'
 import Links from './pages/Links.jsx'
 import Projects from './pages/Projects.jsx'
 import Hobbies from './pages/Hobbies.jsx'
+import ProjectDetail from './pages/ProjectDetail.jsx'
 
 function NavLinkClasses({ isActive }) {
   return `text-left rounded-lg px-3 py-2 text-sm transition-colors hover:text-white ${isActive ? 'text-white' : 'text-slate-400'
@@ -41,6 +42,7 @@ function App() {
             <Routes>
               <Route path="/" element={<About />} />
               <Route path="/projects" element={<Projects />} />
+              <Route path="/projects/:projectId" element={<ProjectDetail />} />
               <Route path="/hobbies" element={<Hobbies />} />
               <Route path="/links" element={<Links />} />
             </Routes>

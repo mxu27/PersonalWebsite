@@ -1,16 +1,6 @@
 import { useEffect, useState } from 'react'
-import { getHello } from '../api.js'
 
 function About() {
-  const [backendMessage, setBackendMessage] = useState(null)
-  const [backendError, setBackendError] = useState(null)
-
-  useEffect(() => {
-    getHello('Michael')
-      .then(setBackendMessage)
-      .catch((err) => setBackendError(err.message))
-  }, [])
-
   return (
     <div className="w-full">
       <header className="mb-12">
@@ -26,12 +16,6 @@ function About() {
           I'm born and raised in a humble town called Swampscott, Massachusetts and currently live in St. Louis, Missouri.
         </p>
       </section>
-      {backendMessage && (
-        <p className="text-slate-500 text-sm">Backend says: {backendMessage}</p>
-      )}
-      {backendError && (
-        <p className="text-amber-600/80 text-sm">Backend unreachable: {backendError}</p>
-      )}
     </div>
   )
 }
