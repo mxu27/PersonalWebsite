@@ -10,7 +10,7 @@ function Projects() {
         </header>
         <section className="mb-10">
           <p className="text-slate-400 leading-relaxed">
-            I've worked on a variety of projects, from small personal projects to larger group projects. Here are some of my favorites.
+            I've worked on a variety of projects, from small personal projects to larger group projects. Here are some of my favorites. Still working on adding more projects!
           </p>
         </section>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 overflow-y-scroll scrollbar-hide p-4">
@@ -18,13 +18,6 @@ function Projects() {
             <Link key={project.id} to={`/projects/${project.id}`} className="project_card block">
               <h3 className="project_title text-lg font-semibold">{project.title}</h3>
               <p className="project_preview">{project.preview}</p>
-              {project.image ? (
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-48 object-cover rounded-lg"
-                />
-              ) : null}
             </Link>
           ))}
         </div>

@@ -50,6 +50,13 @@ function ProjectDetail() {
         </section>
       )}
 
+      {project.links.map((link)=> (
+        <section className="mb-8">
+          <h2 className="text-2xl font-semibold text-white mb-2">{<a href={link.url} target="_blank" rel="noopener noreferrer" className="text-sky-400 hover:underline">{link.label}</a>}</h2>
+          
+        </section>
+      ))}
+
       <Link
         to="/projects"
         className="inline-block mt-4 px-4 py-2 rounded-md bg-slate-800 text-sky-400 hover:bg-slate-700 transition-colors"

@@ -5,6 +5,7 @@ import Links from './pages/Links.jsx'
 import Projects from './pages/Projects.jsx'
 import Hobbies from './pages/Hobbies.jsx'
 import ProjectDetail from './pages/ProjectDetail.jsx'
+import Experiences from './pages/Experiences.jsx'
 
 function NavLinkClasses({ isActive }) {
   return `text-left rounded-lg px-3 py-2 text-sm transition-colors hover:text-white ${isActive ? 'text-white' : 'text-slate-400'
@@ -24,6 +25,9 @@ function App() {
                 <NavLink to="/" className={NavLinkClasses}>
                   About
                 </NavLink>
+                <NavLink to="/experiences" className={NavLinkClasses}>
+                  Experiences
+                </NavLink>
                 <NavLink to="/projects" className={NavLinkClasses}>
                   Projects
                 </NavLink>
@@ -42,6 +46,7 @@ function App() {
             <Routes>
               <Route path="/" element={<About />} />
               <Route path="/projects" element={<Projects />} />
+              <Route path="/experiences" element={<Experiences />} />
               <Route path="/projects/:projectId" element={<ProjectDetail />} />
               <Route path="/hobbies" element={<Hobbies />} />
               <Route path="/links" element={<Links />} />

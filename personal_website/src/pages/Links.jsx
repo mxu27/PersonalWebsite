@@ -1,3 +1,4 @@
+import Resume from '../assets/Michael_Xu_s_Resume_Fullstack.pdf'
 function Links() {
   return (
     <div className="w-full">
@@ -24,14 +25,11 @@ function Links() {
             LinkedIn
           </a>
         </li>
-        {/* <li>
-          <a 
-          href="#" 
-          target="_blank"
-          className="text-sky-400 hover:text-sky-300 hover:underline"
-          >
-            Resume</a>
-        </li> */}
+        <li>
+          <a href={Resume} target="_blank" rel="noopener noreferrer" className="text-sky-400 hover:underline">
+            Resume
+          </a>
+        </li>
       </ul>
     </div>
   )

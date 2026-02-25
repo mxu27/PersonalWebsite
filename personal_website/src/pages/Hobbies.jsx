@@ -10,7 +10,7 @@ function Hobbies() {
             </header>
             <section className="mb-10">
                 <p className="text-slate-400 leading-relaxed">
-                    I enjoy playing badminton.
+                    I enjoy playing badminton. Gonna add some youtube stuff here later.
                 </p>
             </section>
         </div>
